@@ -1,0 +1,17 @@
+
+/*   iPhone X Media Query   */
+@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
+
+    .container-grid {
+        grid-template-columns: 60% 40%;
+    }
+
+    nav[class*="navbar"] {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .navbar a {
+        font-size: 0.4em;
+    }
+}

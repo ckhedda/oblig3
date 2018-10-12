@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>Obligatorisk oppgave 4</title>
+    <link href="stilark.css" media="screen" rel="stylesheet" type="text/css">
+    <link media="print" href="stilark.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body class="grid">
+    <header>
+        <h1>Obligatorisk oppgave 4</h1>
+        <nav class="navbar">
+            <a href="index.html"><i class='fas fa-home'></i> Hjem</a>
+            <a href="skisse.html"><i class="fas fa-drafting-compass"></i> Skisser</a>
+            <a href="hvaergit.html"><i class="fab fa-github"></i> Git / Github</a>
+            <a href="mediatyper.html"><i class="fa fa-compress fa-lg"></i> Medietyper</a>
+            <a href="layoutsicss.html"><i class="fab fa-css3"></i> CSS Layouts</a>
+            <a href="responsivtdesign.html"><i class="fas fa-object-group"></i> Responsivt design</a>   
+        </nav>
+    </header>
+    <main>
+        <section class="flex-container">
+            <article>
+                <h2>Medietyper</h2>
+                <p>Medietyper er ulike og forskjellige "teknikker/typer" som definerer et stilsett på for eksempel en telefonskjerm, på et ark eller på en datamaskinskjerm.
+                    Det finnes mange, forskjellige medietyper som er kompitabelt med CSS. For eksempel: <i>application, audio, example, font, image, message, model, multipart, text</i> og <i>video</i>
+                    Man bruker mediatyper ved å lage et stilark som gjelder for eksempel <i>print</i>, dersom vi vil at nettsiden skal justeres for å bli skrevet ut på papir. Da vil kommandoen <i>print</i> justere nettsidens utseende på utskriften.</p>
+                <p>Det brukes ikke så ofte lenger, på grunn av:</p>
+                <p>Lenge trodde man at medietyper ville løse omtrent alle problemer med det å justere nettsider og kunne tilpasse seg rundt andre enheter. Her var <i>print</i>, <i>all</i> og <i>screen</i> med på å avgjøre for eksempel <i>handheld</i> kunne blant annet gjøre om innholdet på nettsiden bli kompatibel med den aktuelle enheten.</p>
+                <p>Men spørsmålet var da: <i><strong>Hvilke enheter</strong></i>?
+                Ulempen ble da at det ble umulig å lage én eller flere avgrensede medietyper for denne typer enheter.</p>
+                <p>Derimot ble fordelene at vi har fått <i>media queres </i> som lar oss selv definere skjermstørrelser, farger og posisjonen til nettsidens innhold til for eksempel en telefon. Vi kan i tillegg til dette lage andre stilark som kan bli linket til indexen i HTML-filen.</p>
+                Foreksempel:
+                <code>
+                        <p>
+                        @media screen{
+                          p.test {font-family:verdana,sans-serif; font-size:14px}
+                        }
+                        </p>
+                        <p>
+                        @media print{
+                          p.test {font-family:times,serif; font-size:10px}
+                        }
+                        </p>
+                        <p>@media screen,print{
+                          p.test {font-weight:bold}
+                        }
+                        </p>
+                </code>
+                <p><strong>For å oppsummere;</strong></p>
+                Med medietypene print og speech kan strengt tatt en bok skrives i HTML og CSS.
+                De fleste andre medietypene dekkes av regler for tilgjengelighet eller responsivt design.
+                    <p><a href="file:///C:/Users/hedda/Downloads/4%20-%20CSS%20media%20types.pdf">Kilde: PDF</a></p>  
+                    <p>Kilde: <i>Webutvikling</i>, Heine Nätt, Tom, m.m, Gyldendal, 2017 1. utgave</p>
+            <section class="skisser">
+                    <figure><img src="Media-Query.png" alt="Eksempler på media query">
+                    <figcaption><a href="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwiDsPPS_PndAhUEmIsKHWn1CCIQjxx6BAgBEAI&url=https%3A%2F%2Facrosoft.co.uk%2Fcss-media-query-different-device-screen%2F&psig=AOvVaw04iMKASmubxpFVA_2Boqoh&ust=1539195609077247">Kilde</a></figcaption>
+                    </figure>
+                </section>
+        </article>
+        </section>
+    </main>
+    <aside>
+        <section class ="responsivt-design">
+            <h2>Responsivt design</h2>
+            <iframe src="https://www.youtube.com/embed/3JluqTojuME" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p><a href="https://www.webgruppen.no/hvorfor-er-responsivt-design-viktig-for-din-nettside/">Artikkel til <i>Responsivt design</i> <br>(Webgruppen)</a></p>
+            <p><a href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/">Artikkel til <i> Responsivt design</i> <br>(Smashingmagazine)</a></p>
+            <p><a href="https://en.wikipedia.org/wiki/Responsive_web_design">Artikkel til <i>Responsivt design</i> <br>(Wikipedia)</a></p>
+            <p><a href="https://www.techweb.no/blogg/hva-er-responsivt-design">Artikkel til <i>Responsivt design</i> <br>(TechWeb AS)</a></p>
+            <p><a href="https://www.digi.no/artikler/derfor-velger-nesten-alle-responsiv-webdesign/320517">Artikkel til <i>Responsivt design</i> <br>(Digi)</a></p>
+        </section>
+        <section class="google">
+            <a href="https://www.google.no/search?q=github">
+                <i class="fab fa-google"></i>
+            </a>
+            <form action="https://www.google.no/search" target="_blank">
+                <input type="text" value="Github" name="q">
+                <button id="githubsøk" type="submit">Søk etter Github her...</button>
+            </form>
+        </section>    
+    </aside>
+    <footer class="footer">
+        <section class="footer1">
+            <h2>Footer</h2>
+            <p><i class='fas fa-female'></i> Hedda-Caroline A. Karlsen</p>
+            <p><a href="mailto:hedda.c.karlsen@hiof.no"><i class='fas fa-envelope'></i> hedda.c.karlsen@hiof.no</a></p>
+            <p><i class='fas fa-calendar-alt'></i><time datetime="2018"> 2018</time></p>
+        </section>
+        <section class="footer2">
+            <h2>Footer</h2>
+            <p><a href="http://itstud.hiof.no/~hckarlse/webutvikling/oblig2/index.html"><i class='fas fa-backward'></i> Tilbake til startsiden</a></p>
+            <p><a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fitstud.hiof.no%2F~hckarlse%2Fwebutvikling%2Foblig2%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!"></a></p>
+            <p><a href="https://validator.w3.org/nu/?showsource=yes&doc=http%3A%2F%2Fitstud.hiof.no%2F~hckarlse%2Fwebutvikling%2Foblig2%2Findex.html#l32c133">
+            <img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid CSS!" /></a></p>
+        </section>
+    </footer>
+</body>
+</html>
